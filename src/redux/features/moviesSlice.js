@@ -24,11 +24,9 @@ export const moviesSlice = createSlice({
         return { ...movie, checked: false };
       });
     },
-    filterMovies: () => {},
   },
 });
 
-export const { addMovie, removeMovies, checkMovies, filterMovies } =
-  moviesSlice.actions;
+export const { addMovie, removeMovies, checkMovies } = moviesSlice.actions;
 
 export const moviesReducer = moviesSlice.reducer;
